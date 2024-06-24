@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KaTeX</title>
+
+    <!-- KaTeX -->
+    <!-- KaTeX Stylesheet-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css"
+      integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww"
+      crossorigin="anonymous"
+    />
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"
+      integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd"
+      crossorigin="anonymous"
+    ></script>
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"
+      integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"
+    ></script>
+
+    <!-- TAILWIND CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="h-screen p-10 bg-blue-400">
+      <div class="h-full bg-white flex items-center justify-center rounded-xl">
+        <div class="flex flex-col items-center justify-center gap-10">
+          <img
+          class="rounded-[50%] shadow-xl"
+            width="500px"
+            src="https://cdn.pixabay.com/photo/2023/01/07/09/20/ai-generated-7702855_1280.jpg"
+            alt="MathDragon"
+          />
+          <h1 class="text-5xl font-bold">¡Bienvenido a MathDragon!</h1>
+          <button class="px-8 py-3 text-white bg-gradient-to-tr from-orange-400 to-orange-600 text-3xl font-bold rounded-lg shadow-xl">Iniciar la aventura!</button>
+        </div>
+        <!--
+        <p>
+          Debes responder a este ejercicio para que tu MathDragon continúe
+          evolucionando!
+        </p>
+        <span id="el"></span>
+        <p>
+          ¿Cual de estas alternativas será la respuesta correcta a este
+          ejercicio?
+        </p>
+        <ol style="list-style-type: lower-alpha">
+          <li><span>$$c=\pm\sqrt{5a^2+b^2}$$</span></li>
+          <li>Respuesta 2</li>
+          <li>Respuesta 3</li>
+          <li>Respuesta 4</li>
+          <li>Respuesta 5</li>
+        </ol>
+        <p>Recuerda escribir la respuesta correcta en la aplicación.</p>
+        -->
+      </div>
+    </div>
+  </body>
+
+  <script>
+    const element = document.getElementById("el")
+    element.textContent = "$$c=\\pm\\sqrt{5a^2+b^2}$$"
+  </script>
+</html>
